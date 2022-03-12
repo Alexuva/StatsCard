@@ -1,0 +1,239 @@
+/*IMPORTED FONTS*/
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(fonts/Inter/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter-Thin";
+  src: url(fonts/Inter/Inter-Thin.ttf);
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(fonts/Inter/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(fonts/Lexend/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: "Lexend Deca-Thin";
+  src: url(fonts/Lexend/LexendDeca-Thin.ttf);
+}
+/*COLORS*/
+/*DEFAULT STYLES RESET*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*MAIN STYLES*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #090b1a;
+  /*CARD COMPONENT*/
+}
+.container .card {
+  width: 75%;
+  height: 52.4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1b1938;
+  border-radius: 10px;
+  /*PICTURE BOX*/
+  /*INFO BOX*/
+}
+.container .card .picture {
+  position: relative;
+  width: 50%;
+  max-height: 100%;
+  background: red;
+  overflow: hidden;
+  flex-grow: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+.container .card .picture div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #58008f;
+  opacity: 55%;
+  border-radius: 0px;
+}
+.container .card .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 10px 10px 0px;
+}
+.container .card .info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  /*TITLE*/
+}
+.container .card .info .title {
+  font-family: Inter-Bold;
+  color: white;
+  font-size: 1.12em;
+  letter-spacing: 0.02em;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+.container .card .info .title span {
+  color: #aa5cdb;
+}
+.container .card .info .description {
+  font-family: Lexend Deca;
+  color: #A8A6BC;
+  font-size: 0.9em;
+  word-spacing: 20%;
+  line-height: 170%;
+  width: 80%;
+  height: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.container .card .info .stats {
+  font-family: Inter-Bold;
+  color: #F6F8F3;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 15%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.container .card .info .stats span {
+  margin-right: 13%;
+}
+.container .card .info .stats p {
+  margin-top: 5%;
+  font-family: Inter-Regular;
+  color: #A8A6BC;
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 1440px) {
+  .container .card .picture {
+    border-radius: 0px;
+  }
+
+  .container .card .picture div {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .container .card .picture img {
+    height: 100%;
+    width: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media (max-width: 1338px) {
+  .container .card {
+    height: 90%;
+    width: 50%;
+    flex-direction: column-reverse;
+  }
+
+  .container .card .picture {
+    width: 100%;
+    height: 50%;
+  }
+
+  .container .card .info {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .card .picture img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 740px) {
+  .container .card .picture {
+    height: 35%;
+  }
+
+  .container .card .info {
+    height: 70%;
+  }
+
+  .container .card .info .stats {
+    flex-direction: column;
+    width: 80%;
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container .card .info .stats span {
+    margin-bottom: 2%;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 613px) {
+  .container .card {
+    width: 85%;
+    height: 85%;
+  }
+
+  .container .card .picture {
+    height: 40%;
+  }
+
+  .container .card .picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .card .info {
+    height: 65%;
+  }
+
+  .container .card .info .title {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .container .card .info .description {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .container .card .info .stats {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    font-size: 1.3em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .container .card .info .stats span {
+    margin-bottom: 20%;
+    margin-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
