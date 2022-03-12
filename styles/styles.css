@@ -135,16 +135,17 @@
 @media (max-width: 1440px) {
   .container .card .picture {
     border-radius: 0px;
+    border-radius: 0px 10px 10px 0px;
   }
 
   .container .card .picture div {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 10px 10px 0px;
   }
 
   .container .card .picture img {
     height: 100%;
     width: auto;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 10px 10px 0px;
   }
 }
 @media (max-width: 1338px) {
@@ -157,6 +158,7 @@
   .container .card .picture {
     width: 100%;
     height: 50%;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .container .card .info {
@@ -167,6 +169,11 @@
   .container .card .picture img {
     width: 100%;
     height: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .container .card .picture div {
+    border-radius: 10px 10px 0px 0px;
   }
 }
 @media (max-width: 740px) {
