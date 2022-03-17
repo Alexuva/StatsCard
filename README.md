@@ -9,3 +9,6 @@ Se debe realizar un diseño lo más parecido al mostrado a continuación respons
 
 ### 375px
 ![mobile-design](https://user-images.githubusercontent.com/16647012/158021251-909ebc17-967b-4fce-be94-11b0e8116054.jpg)
+
+## Solución
+https://stats-card-six.vercel.app/
